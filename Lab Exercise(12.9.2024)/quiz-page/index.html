@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="/quiz-page/styles.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Interactive Quiz</h1>
+
+    <div class="question" id="question1">
+        <h2>Question 1: Which animal makes this sound?</h2>
+        <audio controls>
+            <source src="assets/train-3.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="options">
+            <button class="option">Train</button>
+            <button class="option">Bus</button>
+            <button class="option">Truck</button>
+        </div>
+    </div>
+
+    
+    <div class="question" id="question2">
+        <h2>Question 2: Watch this video and answer: What sport is this?</h2>
+        <video width="320" height="240" controls>
+            <source src="assets/football.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="options">
+            <button class="option">Basketball</button>
+            <button class="option">Football</button>
+            <button class="option">Tennis</button>
+        </div>
+    </div>
+
+   
+    <div class="question" id="question3">
+        <h2>Question 3: What fruit is this?</h2>
+        <img src="assets/apple.jpg" alt="Apple" width="200">
+        <div class="options">
+            <button class="option">Banana</button>
+            <button class="option">Orange</button>
+            <button class="option">Apple</button>
+        </div>
+    </div>
+
+  
+    <div class="question" id="question4">
+        <h2>Question 4: What is the most abundant gas in Earth's atmosphere?</h2>
+        <div class="options">
+            <button class="option">Oxygen</button>
+            <button class="option">Nitrogen</button>
+            <button class="option">Carbon Dioxide</button>
+        </div>
+    </div>
+
+    <div class="question" id="question5">
+        <h2>Question 5: Which company developed Android?</h2>
+        <div class="options">
+            <button class="option">Apple</button>
+            <button class="option">Google</button>
+            <button class="option">Microsoft</button>
+        </div>
+    </div>
+
+   
+    <div class="results" id="results">
+        <h2>Quiz Results</h2>
+        <p>You scored <span id="score">0</span> out of 5.</p>
+    </div>
+</div>
+
+<script src="/quiz-page/script.js"></script>
+</body>
+
+</html>

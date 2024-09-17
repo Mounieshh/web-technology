@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="/blog-page/assets/cauliflower-logo.png" alt="Logo" width="45px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="blog-container">
+
+        <div class="blog-card">
+            <img src="/blog-page/assets/plants.jpg" alt="Blog Image 1" class="blog-image">
+            <div class="blog-content">
+                <h2>Exploring the Benefits of a Plant-Based Diet</h2>
+                <p class="blog-summary">A plant-based diet offers numerous health benefits and supports environmental sustainability. Click "Read More" to learn more.</p>
+                <button class="read-more-btn">Read More</button>
+                <div class="blog-full-content">
+                    <p>A plant-based diet is not only a great way to improve your health but also benefits the environment. By reducing your intake of animal products, you can lower your risk of chronic diseases such as heart disease and diabetes. Additionally, plant-based diets are associated with lower levels of greenhouse gas emissions and reduced water usage. In this blog, we will dive into the science behind plant-based eating, share delicious recipes, and provide tips on how to make the transition smoothly.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="blog-card">
+            <img src="assets/productivity.png" alt="Blog Image 2" class="blog-image">
+            <div class="blog-content">
+                <h2>The Rise of Remote Work and Its Impact on Productivity</h2>
+                <p class="blog-summary">Remote work is transforming the workplace. Discover the benefits and challenges of working from home in this blog.</p>
+                <button class="read-more-btn">Read More</button>
+                <div class="blog-full-content">
+                    <p>Remote work has become increasingly popular, especially in the wake of recent global events. This shift has led to a significant change in how companies and employees approach productivity. While some argue that working from home can lead to increased flexibility and job satisfaction, others raise concerns about potential distractions and isolation. This blog explores the pros and cons of remote work, offers strategies for maintaining productivity, and examines how this trend is shaping the future of work.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="blog-card">
+            <img src="assets/internet.jpg" alt="Blog Image 3" class="blog-image">
+            <div class="blog-content">
+                <h2>The Evolution of Technology: From the Internet to AI</h2>
+                <p class="blog-summary">From the early days of the internet to the rise of artificial intelligence, technology has evolved rapidly. Learn more in this blog.</p>
+                <button class="read-more-btn">Read More</button>
+                <div class="blog-full-content">
+                    <p>Technology has evolved rapidly over the past few decades, transforming every aspect of our lives. From the early days of the internet to the rise of artificial intelligence, each advancement has brought new opportunities and challenges. In this blog, we will trace the history of technological innovations, discuss the impact of the internet on society, and explore the potential of AI to revolutionize industries and improve our daily lives. Join us as we look back at how far we've come and what the future holds.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="assets/travel.png" alt="Blog Image 4" class="blog-image">
+            <div class="blog-content">
+                <h2>Travel Tips for a Memorable Vacation Experience</h2>
+                <p class="blog-summary">Planning a vacation can be overwhelming. Check out our top travel tips to make your trip unforgettable.</p>
+                <button class="read-more-btn">Read More</button>
+                <div class="blog-full-content">
+                    <p>Planning a vacation can be both exciting and overwhelming. To help you make the most of your trip, we've compiled a list of essential travel tips. From choosing the perfect destination to packing efficiently and navigating local customs, this blog provides practical advice to ensure a smooth and enjoyable vacation. Whether you're a seasoned traveler or a first-time explorer, these tips will help you create lasting memories and avoid common pitfalls.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="assets/bitcoin.jpg" alt="Blog Image 5" class="blog-image">
+            <div class="blog-content">
+                <h2>Understanding Cryptocurrency: A Beginner's Guide</h2>
+                <p class="blog-summary">Cryptocurrency can be confusing. This beginner's guide explains key concepts and how to get started.</p>
+                <button class="read-more-btn">Read More</button>
+                <div class="blog-full-content">
+                    <p>Cryptocurrency has become a hot topic in recent years, but for many, it remains a complex and confusing subject. This beginner's guide aims to demystify the world of digital currencies, explaining key concepts such as blockchain technology, mining, and how to buy and store cryptocurrencies securely. We'll also discuss the potential risks and benefits of investing in cryptocurrency and provide resources for further learning. If you're curious about how cryptocurrencies work and their potential impact on the financial world, this blog is for you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            blogCards.forEach(card => {
+                const readMoreButton = card.querySelector('.read-more-btn');
+                const fullContent = card.querySelector('.blog-full-content');
+                
+                readMoreButton.addEventListener('click', () => {
+                    const isVisible = fullContent.style.display === 'block';
+
+                
+                    blogCards.forEach(otherCard => {
+                        if (otherCard !== card) {
+                            otherCard.querySelector('.blog-full-content').style.display = 'none';
+                            otherCard.querySelector('.read-more-btn').textContent = 'Read More';
+                        }
+                    });
+
+                    if (isVisible) {
+                        fullContent.style.display = 'none';
+                        readMoreButton.textContent = 'Read More';
+                    } else {
+                        fullContent.style.display = 'block';
+                        readMoreButton.textContent = 'Read Less';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+@Mouniesh's Creation
+</body>
+</html>

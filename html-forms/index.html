@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+         .box{
+            background: #e4e6e700;
+            border:1px solid black;
+            backdrop-filter: blur(10px);
+         }
+    </style>
+</head>
+<body >
+<div class="container mt-5 rounded box p-5 ">
+    <form class="row g-3 justify-content-center fw-bold">
+
+        <!-- 1. Simple Text Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="name" class="form-label me-2" style="width: 20%;">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Name" style="width: 50%;">
+        </div>
+
+        <!-- 2. Password Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="password" class="form-label me-2" style="width: 20%;">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" style="width: 50%;">
+        </div>
+
+        <!-- 3. Email Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="email" class="form-label me-2" style="width: 20%;">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 4. Number Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="age" class="form-label me-2" style="width: 20%;">Age:</label>
+            <input type="number" id="age" name="age" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 5. Date Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="dob" class="form-label me-2" style="width: 20%;">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 6. Radio Buttons -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label class="form-label me-2" style="width: 20%;">Gender:</label>
+            <div style="width: 50%;">
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="male" name="gender" value="male" class="form-check-input">
+                    <label for="male" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="female" name="gender" value="female" class="form-check-input">
+                    <label for="female" class="form-check-label">Female</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Checkbox -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label class="form-label me-2" style="width: 20%;">Select your hobbies:</label>
+            <div style="width: 50%;">
+                <div class="form-check">
+                    <input type="checkbox" id="hobby1" name="hobby" value="reading" class="form-check-input">
+                    <label for="hobby1" class="form-check-label">Reading</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="hobby2" name="hobby" value="travelling" class="form-check-input">
+                    <label for="hobby2" class="form-check-label">Travelling</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="hobby3" name="hobby" value="gaming" class="form-check-input">
+                    <label for="hobby3" class="form-check-label">Gaming</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Dropdown Select -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="country" class="form-label me-2" style="width: 20%;">Country:</label>
+            <select id="country" name="country" class="form-select" style="width: 50%;">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+
+        <!-- 9. Textarea -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="message" class="form-label me-2" style="width: 20%;">Message:</label>
+            <textarea id="message" name="message" rows="4" class="form-control" style="width: 50%;"></textarea>
+        </div>
+
+        <!-- 10. File Upload -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="file" class="form-label me-2" style="width: 20%;">Upload a file:</label>
+            <input type="file" id="file" name="file" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 11. Color Picker -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="favcolor" class="form-label me-2" style="width: 20%;">Choose your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" class="form-control form-control-color" style="width: 50%;">
+        </div>
+
+        <!-- 12. Range Slider -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="volume" class="form-label me-2" style="width: 20%;">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" class="form-range" style="width: 50%;">
+        </div>
+
+        <!-- 13. Search Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="search" class="form-label me-2" style="width: 20%;">Search:</label>
+            <input type="search" id="search" name="search" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 14. Telephone Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="phone" class="form-label me-2" style="width: 20%;">Phone:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 15. URL Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="website" class="form-label me-2" style="width: 20%;">Website:</label>
+            <input type="url" id="website" name="website" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 16. Hidden Input -->
+        <input type="hidden" name="userID" value="12345">
+
+        <!-- 17. Submit Button with Image -->
+        <div class="col-12 text-center">
+            <!-- <input type="image" src="submit-button.png" alt="Submit" class="img-fluid"> -->
+            <button class="btn btn-outline-success" type="submit">Submit</button>
+        </div>
+
+        <!-- 18. Placeholder Text -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="username" class="form-label me-2" style="width: 20%;">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" class="form-control" style="width: 50%;">
+        </div>
+
+        <!-- 19. Disabled Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="email" class="form-label me-2" style="width: 20%;">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" disabled placeholder="Disabled Input" style="width: 50%;">
+        </div>
+
+        <!-- 20. Read-Only Input -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="username" class="form-label me-2" style="width: 20%;">Username:</label>
+            <input type="text" id="username" name="username" value="JohnDoe" class="form-control" readonly style="width: 50%;">
+        </div>
+
+        <!-- 21. Required Field -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <label for="required" class="form-label me-2" style="width: 20%;">Required Field:</label>
+            <input type="text" id="required" name="required" class="form-control" required style="width: 50%;">
+        </div>
+
+        <!-- 22. Form with Multiple Select -->
+<div class="col-12 d-flex align-items-center justify-content-center">
+    <label for="fruits" class="form-label me-2" style="width: 20%;">Select your favorite fruits:</label>
+    <select id="fruits" name="fruits" class="form-select" multiple style="width: 50%;">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+    </select>
+</div>
+
+<!-- 23. Form with Multiple Checkboxes -->
+<div class="col-12 d-flex align-items-center justify-content-center">
+    <label class="form-label me-2" style="width: 20%;">Choose your favorite programming languages:</label>
+    <div style="width: 50%;">
+        <div class="form-check">
+            <input type="checkbox" id="lang1" name="language" value="python" class="form-check-input">
+            <label for="lang1" class="form-check-label">Python</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="lang2" name="language" value="javascript" class="form-check-input">
+            <label for="lang2" class="form-check-label">JavaScript</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="lang3" name="language" value="java" class="form-check-input">
+            <label for="lang3" class="form-check-label">Java</label>
+        </div>
+    </div>
+</div>
+
+<!-- 24. Form with Fieldset and Legend -->
+<div class="col-12 d-flex align-items-center justify-content-center">
+    <fieldset class="w-75 border p-3">
+        <legend class="w-auto">Personal Information</legend>
+        <div class="row g-3">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <label for="fname" class="form-label me-2" style="width: 20%;">First Name:</label>
+                <input type="text" id="fname" name="fname" class="form-control" style="width: 50%;">
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <label for="lname" class="form-label me-2" style="width: 20%;">Last Name:</label>
+                <input type="text" id="lname" name="lname" class="form-control" style="width: 50%;">
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<!-- 25. Form with Reset Button -->
+<div class="col-12 d-flex align-items-center justify-content-center">
+    <label for="name_reset" class="form-label me-2" style="width: 20%;">Name:</label>
+    <input type="text" id="name_reset" name="name" class="form-control" style="width: 50%;">
+</div>
+<div class="col-12 d-flex align-items-center justify-content-center">
+    <label for="email_reset" class="form-label me-2" style="width: 20%;">Email:</label>
+    <input type="email" id="email_reset" name="email" class="form-control" style="width: 50%;">
+</div>
+<div class="col-12 text-center mt-3">
+    <input type="reset" value="Reset" class="btn btn-outline-secondary me-2">
+    <input type="submit" value="Submit" class="btn btn-outline-success">
+</div>
+
+
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

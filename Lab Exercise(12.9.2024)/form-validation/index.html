@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/form-validation/style.css">
+    <script defer src="/form-validation/validation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>Registration Form</h1>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            <span id="nameError" class="error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <span id="emailError" class="error"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <span id="passwordError" class="error"></span>
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <span id="birthdateError" class="error"></span>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female">
+                    Female
+                </label>
+            </fieldset>
+            <span id="genderError" class="error"></span>
+
+            <fieldset>
+                <legend>Preferences:</legend>
+                <label for="news">
+                    <input type="checkbox" id="news" name="preferences" value="news">
+                    Receive Newsletters
+                </label>
+                <label for="updates">
+                    <input type="checkbox" id="updates" name="preferences" value="updates">
+                    Receive Updates
+                </label>
+            </fieldset>
+
+            <button type="submit">Register</button>
+            <p id="successMessage" class="success"></p>
+        </form>
+    </div>
+</body>
+</html>

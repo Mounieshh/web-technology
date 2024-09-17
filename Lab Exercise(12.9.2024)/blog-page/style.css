@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.logo{
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: #433e3e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-image {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+   margin-right:36vw;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media h2 {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.blog-summary {
+    color: #555;
+}
+
+.read-more-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #2980b9;
+}
+
+.blog-full-content {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+   
+}
+
