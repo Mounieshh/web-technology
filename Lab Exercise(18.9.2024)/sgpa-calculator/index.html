@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+
+    <div class="container">
+        @Mouniesh's Creation
+        <h2>SGPA Calculator</h2>
+        
+
+        <!-- Input Fields -->
+        <form id="sgpa-form">
+            <div id="subject-container">
+                <label>Enter the number of subjects:</label>
+                <input type="number" id="numSubjects" min="1" placeholder="Number of Subjects" required>
+                <button type="button" onclick="createInputs()">Submit</button>
+            </div>
+
+            <div id="subject-details" style="display: none;">
+                <h3>Subject Details</h3>
+                <div id="subjects"></div>
+                <button type="button" onclick="calculateSGPA()">Calculate SGPA</button>
+            </div>
+        </form>
+
+        <!-- Result Section -->
+        <div class="result" id="sgpaResult" style="display: none;">
+            <p>Your SGPA is: <span id="sgpaValue"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+</html>

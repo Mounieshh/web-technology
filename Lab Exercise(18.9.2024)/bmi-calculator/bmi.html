@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-blue-300 flex flex-col items-center justify-center min-h-screen">
+
+    <h1 class="text-3xl font-bold bg-blue-200 p-4 rounded-lg shadow-lg mb-6">
+        BMI Calculator
+    </h1>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <form id="bmi-form" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="height" class="font-semibold">Height (in centimeters):</label>
+                <input type="number" id="height" step="0.1" class="p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="flex flex-col">
+                <label for="weight" class="font-semibold">Weight (in kilograms):</label>
+                <input type="number" id="weight" step="0.1" class="p-2 border border-gray-300 rounded" required>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                Calculate BMI
+            </button>
+        </form>
+
+        <div id="bmi-result" class="mt-4 text-center text-lg font-semibold"></div>
+    </div>
+
+
+    <script src="bmi.js" defer></script>
+    <div >
+        @Mouniesh's Creation
+    </div>
+</body>
+</html>
